@@ -35,15 +35,3 @@ We developed a custom **social deduction environment** (inspired by *Among Us*) 
 ## Methodology Highlights
 - **Entropy Dynamics:** Analyzed how deceptive statements increase system entropy compared to truthful statements, establishing a metric for detection.
 - **Intervention Success:** Demonstrated that credibility-aware incentive structures significantly reduce the rate of deception in autonomous agents.
-
-## Installation
-
-```bash
-# Clone the repository
-git clone [https://github.com/Melih](https://github.com/Melih) Kutay Yagdereli/LLM-Deception-Analysis.git
-
-# Navigate to the directory
-cd LLM-Deception-Analysis
-
-# Install dependencies
-pip install -r requirements.txt
