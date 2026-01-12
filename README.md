@@ -3,12 +3,12 @@
 **Authors:** Melih Kutay Yağdereli, Berk Kaan Elmas  
 **Status:** Research Project (EE486 Statistical NLP)
 
-## 📌 Overview
+## Overview
 This repository contains the codebase for a controlled experimental framework designed to study **strategic deception** in Large Language Models (LLMs). Unlike standard hallucination detection, this project focuses on **deliberate, incentive-driven deception** in multi-agent settings.
 
 We developed a custom **social deduction environment** (inspired by *Among Us*) where LLM agents (Llama 3) interact under conflicting objectives. The framework utilizes **structured communication protocols** to automatically verify claims against ground-truth state information, enabling scalable, human-free labeling of deceptive behavior.
 
-## 🚀 Key Features
+## Key Features
 
 ### 1. Custom Social Deduction Environment
 - A fully text-based, multi-agent game environment where agents (Impostors vs. Crewmates) must reason, communicate, and deceive to win.
@@ -26,17 +26,17 @@ We developed a custom **social deduction environment** (inspired by *Among Us*) 
 - Implements a dynamic **credibility scoring mechanism** that modulates an agent's influence based on verified truthfulness.
 - Includes fine-tuned "Lie-Aware" models trained on interaction logs to minimize deceptive entropy and improve alignment.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Core:** Python
 - **Models:** Llama 3 (via local inference or API)
 - **Analysis:** Causal Inference, Entropy Analysis, Statistical NLP
 - **Libraries:** PyTorch, Pandas, NumPy, Scikit-learn
 
-## 📊 Methodology Highlights
+## Methodology Highlights
 - **Entropy Dynamics:** Analyzed how deceptive statements increase system entropy compared to truthful statements, establishing a metric for detection.
 - **Intervention Success:** Demonstrated that credibility-aware incentive structures significantly reduce the rate of deception in autonomous agents.
 
-## 💻 Installation
+## Installation
 
 ```bash
 # Clone the repository
