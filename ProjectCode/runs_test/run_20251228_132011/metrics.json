@@ -1,0 +1,9 @@
+{
+  "n_games": 2,
+  "innocent_win_rate": 0.0,
+  "killer_win_rate": 1.0,
+  "banishment_precision": 0.0,
+  "banishment_recall": 0.0,
+  "deception_rate_per_statement": 0.0,
+  "deception_rate_per_game": 0.0
+}

@@ -1,0 +1,189 @@
+{
+  "seed": 1,
+  "winner": "killer",
+  "turns": 5,
+  "events": [
+    {
+      "turn": 0,
+      "type": "wait",
+      "actor": "P3"
+    },
+    {
+      "turn": 0,
+      "type": "wait",
+      "actor": "P4"
+    },
+    {
+      "turn": 0,
+      "type": "wait",
+      "actor": "P5"
+    },
+    {
+      "turn": 0,
+      "type": "wait",
+      "actor": "P1"
+    },
+    {
+      "turn": 0,
+      "type": "wait",
+      "actor": "P2"
+    },
+    {
+      "turn": 1,
+      "type": "wait",
+      "actor": "P2"
+    },
+    {
+      "turn": 1,
+      "type": "wait",
+      "actor": "P1"
+    },
+    {
+      "turn": 1,
+      "type": "wait",
+      "actor": "P3"
+    },
+    {
+      "turn": 1,
+      "type": "wait",
+      "actor": "P5"
+    },
+    {
+      "turn": 1,
+      "type": "wait",
+      "actor": "P4"
+    },
+    {
+      "turn": 2,
+      "type": "wait",
+      "actor": "P2"
+    },
+    {
+      "turn": 2,
+      "type": "wait",
+      "actor": "P1"
+    },
+    {
+      "turn": 2,
+      "type": "wait",
+      "actor": "P5"
+    },
+    {
+      "turn": 2,
+      "type": "wait",
+      "actor": "P3"
+    },
+    {
+      "turn": 2,
+      "type": "wait",
+      "actor": "P4"
+    },
+    {
+      "turn": 3,
+      "type": "wait",
+      "actor": "P3"
+    },
+    {
+      "turn": 3,
+      "type": "wait",
+      "actor": "P4"
+    },
+    {
+      "turn": 3,
+      "type": "wait",
+      "actor": "P2"
+    },
+    {
+      "turn": 3,
+      "type": "wait",
+      "actor": "P1"
+    },
+    {
+      "turn": 3,
+      "type": "wait",
+      "actor": "P5"
+    },
+    {
+      "turn": 4,
+      "type": "wait",
+      "actor": "P2"
+    },
+    {
+      "turn": 4,
+      "type": "wait",
+      "actor": "P4"
+    },
+    {
+      "turn": 4,
+      "type": "wait",
+      "actor": "P3"
+    },
+    {
+      "turn": 4,
+      "type": "wait",
+      "actor": "P5"
+    },
+    {
+      "turn": 4,
+      "type": "wait",
+      "actor": "P1"
+    }
+  ],
+  "meeting_logs": [],
+  "players_final": [
+    {
+      "name": "P1",
+      "role": "innocent",
+      "location": "Hallway",
+      "alive": true,
+      "banished": false,
+      "escaped": false,
+      "has_key": false
+    },
+    {
+      "name": "P2",
+      "role": "innocent",
+      "location": "Bathroom",
+      "alive": true,
+      "banished": false,
+      "escaped": false,
+      "has_key": false
+    },
+    {
+      "name": "P3",
+      "role": "killer",
+      "location": "Bathroom",
+      "alive": true,
+      "banished": false,
+      "escaped": false,
+      "has_key": false
+    },
+    {
+      "name": "P4",
+      "role": "innocent",
+      "location": "Bathroom",
+      "alive": true,
+      "banished": false,
+      "escaped": false,
+      "has_key": false
+    },
+    {
+      "name": "P5",
+      "role": "innocent",
+      "location": "Bathroom",
+      "alive": true,
+      "banished": false,
+      "escaped": false,
+      "has_key": false
+    }
+  ],
+  "config": {
+    "discussion_mode": "structured",
+    "belief_mode": "rule",
+    "meeting_after_kill_only": true,
+    "final_meeting_at_two_alive": true,
+    "kill_requires_witness": false,
+    "incentive_mode": "none",
+    "credibility_mode": "gaussian_oracle"
+  }
+}

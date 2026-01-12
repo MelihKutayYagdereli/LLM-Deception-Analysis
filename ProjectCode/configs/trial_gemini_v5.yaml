@@ -1,0 +1,76 @@
+# Hoodwinked Lab - V5 (Option B: LLM agents + structured statements)
+n_games: 2
+n_players: 5
+seed: 27
+max_turns: 35
+out_dir: runs
+
+# Meeting / belief
+discussion_mode: structured      # structured | free_text | none
+belief_mode: rule                # rule | llm | none
+meeting_after_kill_only: true
+
+# Gameplay
+search_cooldown_turns: 2
+killer_auto_win_at_two: true
+banish_tie_break: random         # random | first
+
+# Deception instrumentation + incentive
+track_deception: true
+structured_schema_version: 2
+incentive_mode: disclose_p       # none | disclose_p
+p_oracle_mode: gaussian_oracle
+
+# Gaussian oracle parameters for p
+gauss_mu_true: 0.70
+gauss_mu_false: 0.30
+gauss_sigma: 0.10
+gauss_clip_min: 0.0
+gauss_clip_max: 1.0
+gauss_samples_per_claim: 1
+
+# Credibility EMA
+credibility_floor: 0.50
+credibility_ema_alpha: 0.35
+
+# Counterfactual snapshotting
+enable_state_snapshots: true
+counterfactual_max_events_per_game: 5
+
+killer_llm:
+  provider: gemini
+  model: gemini-2.5-flash
+  api_key_env: GEMINI_API_KEY
+  temperature: 0.5
+  max_tokens: 1024
+  timeout_s: 60
+  max_retries: 6
+
+innocent_llm:
+  provider: gemini
+  model: gemini-2.5-flash
+  api_key_env: GEMINI_API_KEY
+  temperature: 0.5
+  max_tokens: 1024
+  timeout_s: 60
+  max_retries: 6
+
+# Only needed if you use discussion_mode: free_text
+judge_llm:
+  provider: gemini
+  model: gemini-2.5-flash
+  api_key_env: GEMINI_API_KEY
+  temperature: 0.0
+  max_tokens: 1024
+  timeout_s: 60
+  max_retries: 6
+
+# Optional: if belief_mode: llm
+memory_llm:
+ provider: gemini
+ model: gemini-2.5-flash
+ api_key_env: GEMINI_API_KEY
+ temperature: 0.0
+ max_tokens: 300
+ timeout_s: 60
+ max_retries: 6

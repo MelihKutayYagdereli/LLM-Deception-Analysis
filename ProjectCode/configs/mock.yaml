@@ -1,0 +1,24 @@
+n_games: 2
+n_players: 5
+seed: 1
+max_turns: 5
+out_dir: runs_test
+
+discussion_mode: structured
+belief_mode: rule
+meeting_after_kill_only: true
+final_meeting_at_two_alive: true
+
+kill_requires_witness: false
+block_repeat_search: true
+
+incentive_mode: none
+credibility_mode: gaussian_oracle
+
+killer_llm:
+  provider: mock
+  model: mock
+
+innocent_llm:
+  provider: mock
+  model: mock

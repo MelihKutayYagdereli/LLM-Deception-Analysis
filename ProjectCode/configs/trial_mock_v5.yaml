@@ -1,0 +1,14 @@
+n_games: 2
+n_players: 4
+seed: 1
+max_turns: 8
+discussion_mode: structured
+belief_mode: rule
+meeting_after_kill_only: true
+out_dir: /mnt/data/v5_test_runs
+killer_llm:
+  provider: mock
+  model: mock
+innocent_llm:
+  provider: mock
+  model: mock
